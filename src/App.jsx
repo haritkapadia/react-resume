@@ -1,10 +1,12 @@
 import React from "react";
+import "./page/page.css";
+import Page from "./page/Page";
+
 import styled from "styled-components";
 import websiteIcon from './logo/website.svg';
 import emailIcon from './logo/email.png';
 import githubIcon from './logo/GitHub-Mark-120px-plus.png';
 import phoneIcon from './logo/phone.svg';
-import Page from "./components/Page";
 import Logo from "./components/Logo";
 import Link from "./components/Link";
 import Contacts from "./components/Contacts";
@@ -52,7 +54,7 @@ const hackathonEntries = [
         title: "Application Developer",
         location: "Smouse",
         start: "May 2018",
-        href: "https://github.com/narilth/smouse",
+        href: "https://github.com/haritkapadia/smouse",
         spoiler: "GitHub repository",
         tags: ["Java", "Android Studio"],
         description: `
@@ -64,7 +66,7 @@ const hackathonEntries = [
         title: "Backend Developer",
         location: "PCTeacher",
         start: "May 2019",
-        href: "https://github.com/narilth/PCTeacher",
+        href: "https://github.com/haritkapadia/PCTeacher",
         spoiler: "GitHub repository",
         tags: ["Python", "Django", "Jinja"],
         description: `
@@ -77,7 +79,7 @@ const hackathonEntries = [
         title: "Software Developer",
         location: "Urge Purge",
         start: "December 2019",
-        href: "https://github.com/narilth/urge-purge",
+        href: "https://github.com/haritkapadia/urge-purge",
         spoiler: "GitHub repository",
         tags: ["Node.js", "Python", "PyQt5"],
         description: `
@@ -89,7 +91,7 @@ const hackathonEntries = [
         title: "Developer",
         location: "RNJogger",
         start: "August 2020",
-        href: "https://github.com/narilth/random-running-app",
+        href: "https://github.com/haritkapadia/random-running-app",
         spoiler: "GitHub repository",
         tags: ["React Native", "MapBox", "OpenStreetMap"],
         description: `
@@ -105,7 +107,7 @@ const projectEntries = [
         title: "Lead Developer",
         location: "36 Days Game",
         start: "June 2019",
-        href: "https://github.com/narilth/36daysgame",
+        href: "https://github.com/haritkapadia/36daysgame",
         spoiler: "GitHub repository",
         tags: ["Java", "JavaFX", "J3D Texture"],
         description: `
@@ -117,7 +119,7 @@ const projectEntries = [
         location: "Bullet Hell Rhythm Game",
         start: "November 2019",
         end: "Present",
-        href: "https://github.com/narilth/bhrg",
+        href: "https://github.com/haritkapadia/bhrg",
         spoiler: "GitHub repository",
         tags: ["C++", "SDL 2", "Essentia"],
         description: `
@@ -195,14 +197,6 @@ const resume = (
                 <dd>Enrolled in B. Computer Science and B. Business Administration.</dd>
             </Entry>
         </Block>
-        {
-            /*
-               <Block title="Awards and Certifications">
-               <Entry title="Cisco IT Essentials" date="2020"/>
-               <Entry title="Third place winner" location="PCHacks" date="2019"/>
-               </Block>
-             */
-        }
         <Block title="Languages" compact>
             ES10, Node.js, Typescript, Python, Common Lisp, Racket, Java, C++, C, Clojure.
         </Block>
@@ -234,24 +228,11 @@ const Name = styled.div`
 `;
 
 const Line = styled.div`
-    /* margin-top: 0.5rem; */
-    /* padding-top: 0.25rem; */
     border-bottom: 2px dotted var(--gray);
     max-width: 1in;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    /* ::after {
-    * content: " ";
-    * position: absolute;
-    * top: -50%;
-    * left: calc(50% - 0.5rem);
-    * border-radius: 50%;
-    * width: 1rem;
-    * height: 1rem;
-    * border: 4px double var(--gray);
-    * background-color: white;
-    * } */
 `
 
 const App = () => (
@@ -266,7 +247,7 @@ const App = () => (
                 <Contacts title="Contact Me">
                     <div>
                         <Logo src={websiteIcon}/>
-                        <Link href="https://narilth.github.io"/>
+                        <Link href="https://haritkapadia.github.io"/>
                     </div>
                     <div>
                         <Logo src={emailIcon}/>
@@ -274,7 +255,7 @@ const App = () => (
                     </div>
                     <div>
                         <Logo src={githubIcon}/>
-                        <Link href="https://github.com/narilth"/>
+                        <Link href="https://github.com/haritkapadia"/>
                     </div>
                     <div>
                         <Logo src={phoneIcon}/>

@@ -12,11 +12,10 @@ const StyledContacts = styled.ul`
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-    
+    font-size: 0.9rem;
     >* {
     margin-right: 16px;
     }
-    
     div img {
     margin-right: 4px;
     }

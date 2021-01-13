@@ -36,20 +36,6 @@ h1 {
     margin-bottom: 0;
 }
 
-/* .title { */
-/*     position: relative; */
-/*     z-index: 1; */
-/* } */
-
-/* .title::before { */
-/*     position: absolute; */
-/*     content: attr(title); */
-/*     left: -3px; */
-/*     top: 3px; */
-/*     color: var(--yellow); */
-/*     z-index: -1; */
-/* } */
-
 h2 {
     font-size: 1.7rem;
     margin-top: 0;
@@ -57,17 +43,6 @@ h2 {
     font-weight: bold;
     color: var(--primary);
 }
-
-/* h2::before { */
-/*     content: ""; */
-/*     position: absolute; */
-/*     top: calc(0.8em + 2px); */
-/*     left: 0; */
-/*     width: 100%; */
-/*     height: 3px; */
-/*     background-image: linear-gradient(to right, var(--yellow), white); */
-/*     z-index: -1; */
-/* } */
 
 h3, h4 {
     font-size: 1.25rem;
@@ -87,22 +62,4 @@ dd {
 
 dl, dd {
     margin-bottom: 0.1rem;
-}
-
-.screen-wrapper {
-    background-color: grey;
-    padding-top: 1in;
-    padding-bottom: 1in;
-}
-
-@media print {
-    .screen-wrapper {
-        background-color: white;
-        padding: 0;
-    }
-    @page {
-        size: letter portrait;
-        margin: 0;
-        margin-left: -0.92in;
-    }
 }

@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Resume
 
-## Available Scripts
+Building a resume with all your favourite JS modules.
 
-In the project directory, you can run:
+## Motivation
 
-### `npm start`
+* Fast layout and style choices.
+* Easy customisability for each job posting.
+* Export to PDF, text, and easy embedding into websites.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This is simply a `create-react-app` project with my current resume already inside. Edit
+the `src/` folder, especially `src/App.jsx` and `src/components/`. Keep the `src/page/`
+directory, as that is what makes the project work as intended.
 
-### `npm test`
+View your work with `npm start`.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Exporting
 
-### `npm run build`
+### PDF
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run `npm start`, then open `localhost:3000` on Google Chrome and print the page as a PDF
+at 150% zoom.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I've tried Firefox, it doesn't seem to be able to fit the site on the page. I've tried
+Chromium, it seems to be missing the scale feature when printing to a PDF.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Text
 
-### `npm run eject`
+Run `npm start`, then open `localhost:3000` in your favourite browser and save the web
+page as a text file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Embedding into websites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You can eject this React App, make it a module, or run `npm run build` to create a
+standalone site, possibly to contain in an `<iframe />`.

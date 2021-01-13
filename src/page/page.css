@@ -1,0 +1,17 @@
+.screen-wrapper {
+    background-color: grey;
+    padding-top: 1in;
+    padding-bottom: 1in;
+}
+
+@media print {
+    .screen-wrapper {
+        background-color: white;
+        padding: 0;
+    }
+    @page {
+        size: letter portrait;
+        margin: 0;
+        margin-left: -0.92in;
+    }
+}
