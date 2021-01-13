@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "MyZilla";
+    src: url("/zillaslab-regular-webfont.woff2");
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+30-39;
+}
+
+* {
+    font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+}
+
+html {
+    font-size: 14px;
+}
+
+br {
+    display: contents;
+}
+
+h1, h2, h3, h4 {
+    font-family: "MyZilla", "Zilla Slab";
+    text-align: left;
+    font-weight: normal;
+}
+
+a {
+    font-style: italic;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+/* .title { */
+/*     position: relative; */
+/*     z-index: 1; */
+/* } */
+
+/* .title::before { */
+/*     position: absolute; */
+/*     content: attr(title); */
+/*     left: -3px; */
+/*     top: 3px; */
+/*     color: var(--yellow); */
+/*     z-index: -1; */
+/* } */
+
+h2 {
+    font-size: 1.7rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* h2::before { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     top: calc(0.8em + 2px); */
+/*     left: 0; */
+/*     width: 100%; */
+/*     height: 3px; */
+/*     background-image: linear-gradient(to right, var(--yellow), white); */
+/*     z-index: -1; */
+/* } */
+
+h3, h4 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.15rem;
+}
+
+dl {
+    margin-left: 1rem;
+}
+
+dd {
+    display: list-item;
+    list-style: circle;
+    margin-left: 1em;
+}
+
+dl, dd {
+    margin-bottom: 0.1rem;
+}
+
+.screen-wrapper {
+    background-color: grey;
+    padding-top: 1in;
+    padding-bottom: 1in;
+}
+
+@media print {
+    .screen-wrapper {
+        background-color: white;
+        padding: 0;
+    }
+    @page {
+        size: letter portrait;
+        margin: 0;
+        margin-left: -0.92in;
+    }
+}
