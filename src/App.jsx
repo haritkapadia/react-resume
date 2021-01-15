@@ -15,8 +15,8 @@ import TagList from "./components/TagList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-const jobTitle = "Full Stack Developer";
-const jobDescription = "Self-starting student with software, smartphone, and professional full-stack development experience."
+const jobTitle = "Full Stack Developer studying Computer Science and Business Administration";
+const jobDescription = ""; //"Self-starting student with software, smartphone, and professional full-stack development experience."
 
 const workEntries = [
     {
@@ -144,20 +144,13 @@ const Block = ({ title, children, compact }) => compact === undefined ? (
     </section>
 ) : (<div><H2Inline>{title}</H2Inline>{children}</div>);
 
-const Strong = styled.span`
-    font-weight: bold;
-    font-style: italic;
-`;
-
-const StyledEntry = styled.div`
-    margin-left: 1rem;
-`;
+const StyledEntry = styled.div``;
 
 const Entry = ({ title, location, date, nojoin, compact, children }) => (
     <StyledEntry>
         <div className={compact === true ? "" : "d-flex flex-row align-items-end"}>
             <h3 className={compact === true ? "mb-0" : ""}>
-                <Strong>{title}</Strong>
+                <strong>{title}</strong>
                 {(title !== undefined && location !== undefined && nojoin !== true ? " at " : "")}
                 {location}
             </h3>
@@ -176,7 +169,7 @@ const entriesToElems = (entries) => entries.map(({title, location, start, end, h
            date={start === undefined ? start : start + (end === undefined ? "" : " – " + end)}
            key={`${title}${location}${start}${end}`}>
         {href === undefined ? href : <Link href={href}>{spoiler}: </Link>}
-        {tags === undefined ? tags : (<TagList title="Tech stack">{tags.map((t) => <TagList.Tag key={t}>{t}</TagList.Tag>)}</TagList>)}
+        {tags === undefined ? tags : (<TagList title="Technologies used">{tags.map((t) => <TagList.Tag key={t}>{t}</TagList.Tag>)}</TagList>)}
         {description === undefined ? description : description.trim().split("\n").map((e) => <dd key={e}>{e.trim()}</dd>)}
     </Entry>
 ));
@@ -194,7 +187,7 @@ const resume = (
         </Block>
         <Block title="Education">
             <Entry location="University of Waterloo and University of Laurier" date="2020 – 2025">
-                <dd>Enrolled in B. Computer Science and B. Business Administration.</dd>
+                <dd style={{marginLeft: "2rem"}}>Pursuing double degree in B. Computer Science and B. Business Administration.</dd>
             </Entry>
         </Block>
         <Block title="Languages" compact>
@@ -237,7 +230,7 @@ const Line = styled.div`
 
 const App = () => (
     <div className="screen-wrapper">
-        <Page id="doc">
+        <Page id="doc" showBorder={false}>
             <header>
                 <Name>
                     <h1>Harit Kapadia</h1>

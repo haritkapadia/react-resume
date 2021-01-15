@@ -23,18 +23,25 @@ const PageBox = styled.div`
     padding-top: calc(0.5in - 0.5rem);
     background-color: white;
     text-align: justify;
+    border: 1px solid black;
+
+    @media print {
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    }
+
     >div {
     width: 7.5in;
     height: 10in;
     margin: auto;
     padding: 0;
-    background-color: white;
     }
+
     ${(props) => props.border === true ? showBorder : ""}
-    }
 `;
 const Page = ({ children, id, showBorder }) => (
-    <PageBox showBorder={showBorder}>
+    <PageBox border={showBorder}>
         <div id={id}>{children}</div>
     </PageBox>
 );

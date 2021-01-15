@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const StyledLink = styled.span`
     font-weight: normal;
-    font-style: italic;
     a {
     border-bottom: solid 1px;
     font-family: "MyZilla", "Zilla Slab";
+    font-style: italic;
     }
 `;
 
