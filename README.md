@@ -1,4 +1,4 @@
-# React Resume
+># React Resume
 
 Building a resume with all your favourite JS modules.
 
@@ -23,8 +23,16 @@ View your work with `npm start`.
 Run `npm start`, then open `localhost:3000` on Google Chrome and print the page as a PDF
 at 150% zoom.
 
-I've tried Firefox, it doesn't seem to be able to fit the site on the page. I've tried
-Chromium, it seems to be missing the scale feature when printing to a PDF.
+I've tried Firefox, it does not add hyperlinks. I've tried Chromium, it seems to be
+missing the scale feature when printing to a PDF.
+
+#### When Chrome misbehaves
+
+Sometimes, Google Chrome ignores your desired page size. In this case, consider using
+`python make-pdf.py`.
+
+You will need the `pdftk` and `google-chrome-stable` executables on your PATH. The
+script operates by shrinking the PDF's MediaBox such that it is letter-sized.
 
 ### Text
 
