@@ -14,7 +14,7 @@ const StyledContacts = styled.ul`
     margin-bottom: 0;
     font-size: 0.9rem;
     >* {
-    margin-right: 16px;
+    margin-right: 12px;
     }
     div img {
     margin-right: 4px;

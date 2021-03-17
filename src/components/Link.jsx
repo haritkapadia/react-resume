@@ -5,7 +5,7 @@ const StyledLink = styled.span`
     font-weight: normal;
     a {
     border-bottom: solid 1px;
-    font-family: "MyZilla", "Zilla Slab";
+    font-family: "Zilla Slab";
     font-style: italic;
     }
 `;

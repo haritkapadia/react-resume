@@ -19,8 +19,7 @@ const PageBox = styled.div`
     height: 11in;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5in;
-    padding-top: calc(0.5in - 0.5rem);
+    padding-top: calc(0.75in - 0.5rem);
     background-color: white;
     text-align: justify;
     border: 1px solid black;
@@ -32,8 +31,8 @@ const PageBox = styled.div`
     }
 
     >div {
-    width: 7.5in;
-    height: 10in;
+    width: 7in;
+    height: 9.5in;
     margin: auto;
     padding: 0;
     }
