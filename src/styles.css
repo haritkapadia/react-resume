@@ -11,6 +11,10 @@
     -webkit-font-feature-settings: "lnum";
 }
 
+b {
+    font-weight: unset;
+}
+
 html {
     font-size: 14px;
 }

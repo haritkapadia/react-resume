@@ -6,10 +6,10 @@ position: relative;
 ::before {
     position: absolute;
     content: "";
-    top: 0.5in;
+    top: 0.3in;
     left: 0.5in;
     width: 7.5in;
-    height: 10in;
+    height: 10.2in;
     border: 1px solid black;
 }
 `;
@@ -19,7 +19,7 @@ const PageBox = styled.div`
     height: 11in;
     margin-left: auto;
     margin-right: auto;
-    padding-top: calc(0.75in - 0.5rem);
+    padding-top: 0.3in;
     background-color: white;
     text-align: justify;
     border: 1px solid black;
@@ -31,8 +31,8 @@ const PageBox = styled.div`
     }
 
     >div {
-    width: 7in;
-    height: 9.5in;
+    width: 7.5in;
+    height: 10.2in;
     margin: auto;
     padding: 0;
     }
